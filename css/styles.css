@@ -460,3 +460,140 @@ html{scroll-behavior:smooth}
   .portfolio-projects{gap:36px}
 }
 
+/* Case Study Styles */
+.project-case-study {
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(16, 185, 129, 0.05);
+  border-left: 4px solid #10b981;
+  border-radius: 6px;
+}
+
+.case-section {
+  margin-bottom: 16px;
+}
+
+.case-section:last-child {
+  margin-bottom: 0;
+}
+
+.case-section h4 {
+  margin: 0 0 8px 0;
+  color: #10b981;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.case-section p {
+  margin: 0;
+  color: rgba(234, 242, 241, 0.9);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.case-section ul {
+  color: rgba(234, 242, 241, 0.9);
+  line-height: 1.8;
+}
+
+/* Services Section */
+.services-section {
+  margin: 80px auto;
+  padding: 60px 0;
+}
+
+.services-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  color: #eaf2f1;
+}
+
+.services-section > p {
+  font-size: 1.05rem;
+  color: rgba(234, 242, 241, 0.8);
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.service-card {
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: #10b981;
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.service-card h4 {
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
+  color: #eaf2f1;
+}
+
+.service-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(234, 242, 241, 0.8);
+  line-height: 1.6;
+}
+
+.availability-section h3 {
+  color: #eaf2f1;
+  margin-bottom: 16px;
+}
+
+.availability-section ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.availability-section li {
+  color: rgba(234, 242, 241, 0.9);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.availability-section li:before {
+  content: "✓ ";
+  color: #10b981;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .availability-section ul {
+    columns: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-card {
+    padding: 20px;
+  }
+}

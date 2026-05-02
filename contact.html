@@ -20,10 +20,50 @@
     </header>
 
     <main class="container features">
-      <h2>Contact</h2>
-      <p>Want to work together? Send a message or reach out via email/phone.</p>
+      <h2>Let's Work Together</h2>
+      <p style="font-size: 1.1rem; color: #666; margin-bottom: 32px;">I'm available for contract-to-hire opportunities, freelance projects, and full-time roles. Reach out to discuss your next project.</p>
 
-      <form action="/" class="contact-form" onsubmit="alert('Thanks! Replace this handler with form backend or Netlify/GitHub Pages form action.'); return false;">
+      <!-- Quick Contact Links -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 48px;">
+        <a href="mailto:asadmeh.9546@gmail.com" style="display: flex; align-items: center; gap: 12px; padding: 16px; border: 2px solid #e0e0e0; border-radius: 8px; text-decoration: none; color: #333; transition: all 0.3s;">
+          <span style="font-size: 24px;">📧</span>
+          <div>
+            <div style="font-weight: 600; color: #10b981;">Email</div>
+            <div style="font-size: 0.9rem; color: #666;">asadmeh.9546@gmail.com</div>
+          </div>
+        </a>
+
+        <a href="https://www.upwork.com/freelancers/~01e59293f4d8d0d1a4" target="_blank" style="display: flex; align-items: center; gap: 12px; padding: 16px; border: 2px solid #e0e0e0; border-radius: 8px; text-decoration: none; color: #333; transition: all 0.3s;">
+          <span style="font-size: 24px;">💼</span>
+          <div>
+            <div style="font-weight: 600; color: #10b981;">Upwork</div>
+            <div style="font-size: 0.9rem; color: #666;">Hire Me • 30+ hrs/week</div>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/asad-mehmood95" target="_blank" style="display: flex; align-items: center; gap: 12px; padding: 16px; border: 2px solid #e0e0e0; border-radius: 8px; text-decoration: none; color: #333; transition: all 0.3s;">
+          <span style="font-size: 24px;">🔗</span>
+          <div>
+            <div style="font-weight: 600; color: #10b981;">LinkedIn</div>
+            <div style="font-size: 0.9rem; color: #666;">Connect • Follow</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/asadmehmood" target="_blank" style="display: flex; align-items: center; gap: 12px; padding: 16px; border: 2px solid #e0e0e0; border-radius: 8px; text-decoration: none; color: #333; transition: all 0.3s;">
+          <span style="font-size: 24px;">💻</span>
+          <div>
+            <div style="font-weight: 600; color: #10b981;">GitHub</div>
+            <div style="font-size: 0.9rem; color: #666;">View My Code</div>
+          </div>
+        </a>
+      </div>
+
+      <hr style="margin: 48px 0; opacity: 0.2;">
+
+      <h3 style="margin-bottom: 8px;">Send a Message</h3>
+      <p style="margin-bottom: 24px; color: #666;">For inquiries, project details, or to schedule a call:</p>
+
+      <form action="https://formspree.io/f/xyzpqrst" class="contact-form" method="POST">
         <label>
           Name
           <input type="text" name="name" required />
@@ -33,11 +73,27 @@
           <input type="email" name="email" required />
         </label>
         <label>
+          Subject
+          <input type="text" name="subject" placeholder="Project or inquiry type" />
+        </label>
+        <label>
           Message
-          <textarea name="message" rows="5" required></textarea>
+          <textarea name="message" rows="5" placeholder="Tell me about your project, timeline, and budget (if applicable)." required></textarea>
         </label>
         <button class="btn primary" type="submit">Send Message</button>
       </form>
+
+      <div style="margin-top: 48px; padding: 24px; background: rgba(16, 185, 129, 0.05); border-radius: 8px; border-left: 4px solid #10b981;">
+        <h4 style="margin-top: 0; color: #10b981;">What I'm Looking For</h4>
+        <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
+          <li>Contract-to-hire full-stack development roles</li>
+          <li>Freelance projects (30+ hours/week available)</li>
+          <li>MERN stack applications</li>
+          <li>Booking platforms, e-commerce, or real-time systems</li>
+          <li>DevOps & cloud deployment work</li>
+          <li>Backend API development</li>
+        </ul>
+      </div>
     </main>
 
     <footer class="site-footer">
